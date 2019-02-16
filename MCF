@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+#include <alloc.h>
+#include <process.h>
+
+int main(void)
+{
+   char *str;
+   char *str1=NULL;
+
+   if ((str = (char *) malloc(10)) == NULL)
+   {
+      printf("Not enough memory to allocate buffer\n");
+      exit(1);
+   }
+   str1=(char*)calloc(10,sizeof(10,sizeof(char)));
+
+   strcpy(str, "Hello");
+   strcpy(str1,"World");
+
+   printf("String is %s\n", str);
+   printf("String1 is %s\n",str1);
+
+   free(str); free(str1);
+   getch();
+   return 0;
+}
