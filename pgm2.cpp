@@ -1,21 +1,34 @@
 #include<iostream>
-class obj
+#include<limits>
+class stud
 {
-	struct student
-{
-	char name[25];
-	float s1,s2,s3;
-}s;
-}
+ 	int n;
+	 int i;
+	 int avg;
 
+};
 int main()
 {
-	int i,n;
-	cout<<"Enter the number of student\n";
-	cin>>n;
-	cout<<"Enter the name and marks\n";
-	for(i=0;i<n;i++)
-	cin>>s.name>>s.s1>>s.s2>>s.s3;
 	
-	cout<<"NAME\t"<<"SUB1\t"<<"SUB2\t"<<"SUB3\t"<<"AVG"	
+	struct student
+	{
+		char name[20];
+		float s1,s2,s3;
+	}s;
+	cout<<"Enter number of student\n";
+	cin>>n;
+	for(i=0;i<n;i++)
+	{
+		cout<<"NAME:\t";
+		cin>>s.name;
+		cout<<"S1:\t";
+		cin>>s.s1;
+		cout<<"S2:\t";
+		cin>>s.s2;
+		cout<<"S3:\t";
+		cin>>s.s3;
+		avg=(s.s1+s.s2+s.s3)/3;
+		cout<<"Avg:\t"<<avg;	
+	}	
+	
 }
